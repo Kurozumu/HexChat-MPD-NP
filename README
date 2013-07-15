@@ -1,0 +1,4 @@
+HCMPDNP is a simple HexChat plugin that fetches info on the currently playing
+track in MPD, and prints it to the currently focused channel.
+
+Current version depends on `mpc`, future versions may instead speak MPD protocol.
