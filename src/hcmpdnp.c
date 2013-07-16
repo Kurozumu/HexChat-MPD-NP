@@ -30,7 +30,7 @@ static int nowplaying_cb (char *word[], char *word_eol[], void *userdata)
 		return HEXCHAT_EAT_ALL;
 	}
 
-	mpc = popen("mpc current -f '[[Artist: %artist% :: [Album: %album% :: ]][[Track: %track :: ]Title: %title%]]|[%file%]'", "r");
+	mpc = popen("mpc current -f '[[Artist: %artist% :: [Album: %album% :: ]][[Track: %track% :: ]Title: %title%]]|[%file%]'", "r");
 	if (mpc == NULL)
 	{
 		hexchat_print(ph, "Error executing mpc\n");
